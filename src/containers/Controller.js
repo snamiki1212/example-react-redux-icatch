@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import creater from '../components/creater';
+import generate from '../lib/generator';
 import { TwitterPicker } from 'react-color';
 import { updateBackgroundColor } from '../actions';
 
@@ -13,7 +13,7 @@ const Controller = ({ updateBackgroundColor, backgroundColor }) => {
         onChangeComplete={(color) => updateBackgroundColor(color.hex)}
       />
       { backgroundColor}
-      <button onClick={() => creater('my-node')}>CREATE</button>
+      <button onClick={() => generate('my-node')}>CREATE</button>
     </div>
   )
 }

@@ -1,7 +1,6 @@
-
 import domtoimage from 'dom-to-image';
 
-const creater = (inputId) => {
+const generate = (inputId) => {
   var node = document.getElementById(inputId);
 
   domtoimage.toPng(node)
@@ -14,7 +13,6 @@ const creater = (inputId) => {
       .catch(function (error) {
           console.error('oops, something went wrong!', error);
       });
-
 }
 
-export default creater;
+export default generate;
