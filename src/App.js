@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Demo from './components/Demo';
-import Controller from './components/Controller'
+import Controller from './containers/Controller'
 import Output from './components/Output';
 
 function App() {

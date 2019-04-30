@@ -1,5 +1,6 @@
 import React from 'react';
-import creater from './creater';
+import { connect } from 'react-redux';
+import creater from '../components/creater';
 import { SketchPicker } from 'react-color';
 
 const handleChangeComplete = (color) => {
@@ -24,5 +25,10 @@ const Controller = () => {
     </div>
   )
 }
+const mapStateToProps = (state) => state
+const mapDispatchToProps = (dispatch) => ({});
 
-export default Controller;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Controller);
