@@ -1,10 +1,9 @@
 
 import domtoimage from 'dom-to-image';
 
-const creater = () => {
-  var node = document.getElementById('my-node');
+const creater = (inputId) => {
+  var node = document.getElementById(inputId);
 
-  console.log(node);
   domtoimage.toPng(node)
       .then(function (dataUrl) {
         console.log('hit');
