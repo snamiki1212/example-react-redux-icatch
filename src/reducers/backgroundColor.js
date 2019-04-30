@@ -6,4 +6,3 @@ export const updateBackgroundColor = (state = '', action) => {
       return state;
   }
 }
-
