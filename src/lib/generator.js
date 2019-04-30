@@ -4,19 +4,18 @@ export const GENERATER_INPUT_ID = 'generator-target-id';
 
 const generate = () => {
   const inputId = GENERATER_INPUT_ID;
-
-  var node = document.getElementById(inputId);
+  const node = document.getElementById(inputId);
 
   domtoimage.toPng(node)
-      .then(function (dataUrl) {
-        console.log('hit');
-          var img = new Image();
-          img.src = dataUrl;
-          document.body.appendChild(img);
-      })
-      .catch(function (error) {
-          console.error('oops, something went wrong!', error);
-      });
+    .then(dataUrl => {
+      const img = new Image();
+      img.src = dataUrl;
+
+      document.body.appendChild(img);
+    })
+    .catch(error => {
+      console.error('oops, something went wrong!', error);
+    });
 }
 
 export default generate;
