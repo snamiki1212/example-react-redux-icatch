@@ -12,8 +12,7 @@ import { updateBackgroundColor } from '../actions';
 //   };
 // }
 
-const Controller = ({ updateBackgroundColor }) => {
-  let backgroundColor = 'red';
+const Controller = ({ updateBackgroundColor, backgroundColor }) => {
   return(
     <div>
       Controller
@@ -21,12 +20,16 @@ const Controller = ({ updateBackgroundColor }) => {
         color={backgroundColor}
         onChangeComplete={(color) => updateBackgroundColor(color.hex)}
       />
+      { backgroundColor}
       <button onClick={() => creater('my-node')}>CREATE</button>
     </div>
   )
 }
 
-const mapStateToProps = (state) => ({ backgroundColor: state.backgroundColor });
+const mapStateToProps = (state) => {
+  console.log(state);
+  return ({ backgroundColor: state.updateBackgroundColor })
+};
 
 const mapDispatchToProps = (dispatch) => ({
   updateBackgroundColor: (hex) => dispatch(updateBackgroundColor(hex))

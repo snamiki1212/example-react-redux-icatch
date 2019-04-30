@@ -1,4 +1,4 @@
-export const updateBackgroundColor = (state = [], action) => {
+export const updateBackgroundColor = (state = '', action) => {
   switch(action.type){
     case "UPDATE_BACKGROUND_COLOR":
       return action.hex;

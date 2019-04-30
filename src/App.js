@@ -1,14 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Demo from './components/Demo';
+import DemoContainer from './containers/DemoContainer';
 import Controller from './containers/Controller'
 import Output from './components/Output';
 
 function App() {
   return (
     <div className="App">
-      <Demo />
+      <DemoContainer />
       <Controller />
       <Output />
       <header className="App-header">

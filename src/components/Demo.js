@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Demo = () => {
+const Demo = ({ backgroundColor }) => {
   return(
-    <div>
+    <div style={{ backgroundColor: backgroundColor}} onClick={() => console.log(backgroundColor)}>
       this is demo
     </div>
   );
