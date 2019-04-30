@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
+import { updateBackgroundColor } from './background';
 
-export default combineReducers({}
-  // 
-);
+export default combineReducers({
+  updateBackgroundColor
+});
