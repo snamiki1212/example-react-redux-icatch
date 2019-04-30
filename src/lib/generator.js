@@ -1,6 +1,7 @@
 import domtoimage from 'dom-to-image';
 
-export const GENERATER_INPUT_ID = 'generator-target-id';
+export const GENERATER_INPUT_ID = 'generator-input-id';
+export const GENERATER_OUTPUT_ID = 'generator-output-id'
 
 const generate = () => {
   const inputId = GENERATER_INPUT_ID;
@@ -11,7 +12,7 @@ const generate = () => {
       const img = new Image();
       img.src = dataUrl;
 
-      document.body.appendChild(img);
+      document.getElementById(GENERATER_OUTPUT_ID).appendChild(img);
     })
     .catch(error => {
       console.error('oops, something went wrong!', error);
