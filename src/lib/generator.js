@@ -1,6 +1,10 @@
 import domtoimage from 'dom-to-image';
 
-const generate = (inputId) => {
+export const GENERATER_INPUT_ID = 'generator-target-id';
+
+const generate = () => {
+  const inputId = GENERATER_INPUT_ID;
+
   var node = document.getElementById(inputId);
 
   domtoimage.toPng(node)

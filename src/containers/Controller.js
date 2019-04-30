@@ -13,7 +13,7 @@ const Controller = ({ updateBackgroundColor, backgroundColor }) => {
         onChangeComplete={(color) => updateBackgroundColor(color.hex)}
       />
       { backgroundColor}
-      <button onClick={() => generate('my-node')}>CREATE</button>
+      <button onClick={() => generate()}>CREATE</button>
     </div>
   )
 }
