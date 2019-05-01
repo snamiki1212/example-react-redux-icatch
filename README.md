@@ -4,6 +4,7 @@
 - Redux の学習用に作成したアイキャッチジェネレータ
 
 - Tech
+  - React & Redux
   - React color: <http://casesandberg.github.io/react-color/>
   - Dom to image : <https://github.com/tsayen/dom-to-image>
 
