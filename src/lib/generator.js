@@ -11,6 +11,7 @@ const generate = () => {
     .then(dataUrl => {
       const img = new Image();
       img.src = dataUrl;
+      img.style.border = 'dashed 1px black';
 
       document.getElementById(GENERATER_OUTPUT_ID).appendChild(img);
     })

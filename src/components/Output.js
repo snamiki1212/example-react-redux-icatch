@@ -4,7 +4,7 @@ import { GENERATER_OUTPUT_ID } from '../lib/generator';
 const Output = () => {
   return(
     <div id={GENERATER_OUTPUT_ID}>
-      this is output
+      <p >↓↓</p>
     </div>
   );
 };

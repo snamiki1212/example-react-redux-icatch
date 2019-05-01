@@ -14,7 +14,10 @@ const Demo = ({
         width: '200px',
         borderRadius: '10px',
         backgroundColor: backgroundColor,
-        color: stringColor
+        color: stringColor,
+
+        display: 'flex',
+        alignItems: 'center',
       }}
       onClick={() => console.log(backgroundColor)}
     >
