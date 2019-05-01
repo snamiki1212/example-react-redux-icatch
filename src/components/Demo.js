@@ -9,7 +9,6 @@ const Demo = ({ stringColor, backgroundColor }) => {
         height: '200px',
         width: '200px',
         borderRadius: '10px',
-        marginTop: '100px',
         backgroundColor: backgroundColor,
         color: stringColor
       }}

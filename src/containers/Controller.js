@@ -6,7 +6,7 @@ import { updateBackgroundColor, updateStringColor } from '../actions';
 
 const Controller = ({ updateStringColor, updateBackgroundColor, stringColor, backgroundColor }) => {
   return(
-    <div>
+    <div style={{ backgroundColor: 'lightgray' }}>
       Controller
       <TwitterPicker
         color={backgroundColor}

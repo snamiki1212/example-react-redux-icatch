@@ -7,7 +7,9 @@ import Output from './components/Output';
 function App() {
   return (
     <div className="App">
-      <DemoContainer />
+      <DemoContainer
+        style={{ marginTop: '200px' }}
+      />
       <Controller />
       <Output />
     </div>
