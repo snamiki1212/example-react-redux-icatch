@@ -26,10 +26,10 @@ const Controller = ({
         color={stringColor}
         onChangeComplete={(color) => updateStringColor(color.hex)}
       />
-      <input
+      <textarea
         value={inputText}
         type='textarea'
-        onChange={(e) => updateInputText(e.target.value)}
+        onChange={(e) => updateInputText(e.currentTarget.value)}
       />
       <br />
       <button onClick={() => generate()}>CREATE</button>
