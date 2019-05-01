@@ -1,3 +1,14 @@
+
+![redux-icatch-movie](./redux-icatch.gif)
+
+- Redux の学習用に作成したアイキャッチジェネレータ
+
+- Tech
+  - React color: <http://casesandberg.github.io/react-color/>
+  - Dom to image : <https://github.com/tsayen/dom-to-image>
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
