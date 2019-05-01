@@ -15,24 +15,47 @@ const Controller = ({
   backgroundColor,
   inputText,
 }) => {
+  const colorPickerCSS = {
+    textAlign: 'left',
+    padding: '10px',
+  };
+
   return(
-    <div style={{ backgroundColor: 'lightgray' }}>
-      Controller
-      <TwitterPicker
-        color={backgroundColor}
-        onChangeComplete={(color) => updateBackgroundColor(color.hex)}
-      />
-      <TwitterPicker
-        color={stringColor}
-        onChangeComplete={(color) => updateStringColor(color.hex)}
-      />
+    <div style={{
+      backgroundColor: 'lightgray',
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      margin: '10px',
+    }} >
+      <div style={colorPickerCSS}>
+        <p>背景色(BackgroundColor)</p>
+        <TwitterPicker
+          color={backgroundColor}
+          onChangeComplete={(color) => updateBackgroundColor(color.hex)}
+        />
+      </div>
       <textarea
         value={inputText}
         type='textarea'
         onChange={(e) => updateInputText(e.currentTarget.value)}
+        style={{padding: '10px', }}
       />
+      <div style={colorPickerCSS}>
+        <p>文字色(Color)</p>
+        <TwitterPicker
+          color={stringColor}
+          onChangeComplete={(color) => updateStringColor(color.hex)}
+        />
+      </div>
+
       <br />
-      <button onClick={() => generate()}>CREATE</button>
+      <button
+        style={{ width: '100%', padding: '10px', }}
+        onClick={() => generate()}
+      >
+        CREATE
+      </button>
     </div>
   )
 }
