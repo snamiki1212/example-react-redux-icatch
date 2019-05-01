@@ -15,17 +15,18 @@ const Demo = ({
         id={GENERATER_INPUT_ID}
         style={{
           height: '200px',
-          width: '200px',
+          width: '400px',
           borderRadius: '10px',
           backgroundColor: backgroundColor,
           color: stringColor,
 
           display: 'flex',
-          alignItems: 'center',
+          flexDirection: 'column',
+          justifyContent: 'center',
         }}
         onClick={() => console.log(backgroundColor)}
       >
-        {inputText}
+        {inputText.split ('\n').map ((item, i) => <p style={{padding: 0, margin: 0 }} key={i}>{item}</p>)}
       </div>
     </div>
   );
