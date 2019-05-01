@@ -1,7 +1,11 @@
 import React from 'react';
 import { GENERATER_INPUT_ID } from '../lib/generator';
 
-const Demo = ({ stringColor, backgroundColor }) => {
+const Demo = ({
+  stringColor,
+  backgroundColor,
+  inputText,
+}) => {
   return(
     <div
       id={GENERATER_INPUT_ID}
@@ -14,7 +18,7 @@ const Demo = ({ stringColor, backgroundColor }) => {
       }}
       onClick={() => console.log(backgroundColor)}
     >
-      this is demo
+      {inputText}
     </div>
   );
 };

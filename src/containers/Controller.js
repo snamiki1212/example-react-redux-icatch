@@ -2,9 +2,19 @@ import React from 'react';
 import { connect } from 'react-redux';
 import generate from '../lib/generator';
 import { TwitterPicker } from 'react-color';
-import { updateBackgroundColor, updateStringColor } from '../actions';
+import { updateBackgroundColor, updateStringColor, updateInputText } from '../actions';
 
-const Controller = ({ updateStringColor, updateBackgroundColor, stringColor, backgroundColor }) => {
+const Controller = ({
+  // disaptch call-backs
+  updateStringColor,
+  updateBackgroundColor,
+  updateInputText,
+
+  // values
+  stringColor,
+  backgroundColor,
+  inputText,
+}) => {
   return(
     <div style={{ backgroundColor: 'lightgray' }}>
       Controller
@@ -16,7 +26,11 @@ const Controller = ({ updateStringColor, updateBackgroundColor, stringColor, bac
         color={stringColor}
         onChangeComplete={(color) => updateStringColor(color.hex)}
       />
-      { backgroundColor}
+      <input
+        value={inputText}
+        onChange={(e) => updateInputText(e.target.value)}
+      />
+      <br />
       <button onClick={() => generate()}>CREATE</button>
     </div>
   )
@@ -27,13 +41,15 @@ const mapStateToProps = (state) => {
   return ({
     backgroundColor: state.updateBackgroundColor,
     stringColor: state.updateStringColor,
+    inputText: state.updateInputText,
   })
 
 };
 
 const mapDispatchToProps = (dispatch) => ({
   updateBackgroundColor: (hex) => dispatch(updateBackgroundColor(hex)),
-  updateStringColor: (hex) => dispatch(updateStringColor(hex))
+  updateStringColor: (hex) => dispatch(updateStringColor(hex)),
+  updateInputText: (text) => dispatch(updateInputText(text)),
 });
 
 export default connect(

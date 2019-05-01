@@ -3,7 +3,8 @@ import Demo from '../components/Demo';
 
 const mapStateToProps = (state) => ({
   backgroundColor: state.updateBackgroundColor,
-  stringColor: state.updateStringColor
+  stringColor: state.updateStringColor,
+  inputText: state.updateInputText,
 });
 
 const mapDispatchToProps = (dispatch) => ({
