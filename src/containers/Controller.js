@@ -28,6 +28,7 @@ const Controller = ({
       />
       <input
         value={inputText}
+        type='textarea'
         onChange={(e) => updateInputText(e.target.value)}
       />
       <br />
@@ -37,7 +38,6 @@ const Controller = ({
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return ({
     backgroundColor: state.updateBackgroundColor,
     stringColor: state.updateStringColor,
