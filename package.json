@@ -1,7 +1,7 @@
 {
   "name": "icatch",
   "version": "0.1.0",
-  "homepage": "https://snamiki1212.github.io/icatch/",
+  "homepage": "https://snamiki1212.github.io/example-react-redux-icatch/",
   "private": true,
   "dependencies": {
     "dom-to-image": "^2.6.0",
@@ -15,6 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
