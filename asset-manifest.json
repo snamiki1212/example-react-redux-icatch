@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/icatch/static/css/main.aa533529.chunk.css",
-    "main.js": "/icatch/static/js/main.d1ff492e.chunk.js",
-    "main.js.map": "/icatch/static/js/main.d1ff492e.chunk.js.map",
-    "runtime~main.js": "/icatch/static/js/runtime~main.1da1156b.js",
-    "runtime~main.js.map": "/icatch/static/js/runtime~main.1da1156b.js.map",
-    "static/js/2.ee8e742c.chunk.js": "/icatch/static/js/2.ee8e742c.chunk.js",
-    "static/js/2.ee8e742c.chunk.js.map": "/icatch/static/js/2.ee8e742c.chunk.js.map",
-    "index.html": "/icatch/index.html",
-    "precache-manifest.a909ecc499d2f9e757c279e47764183c.js": "/icatch/precache-manifest.a909ecc499d2f9e757c279e47764183c.js",
-    "service-worker.js": "/icatch/service-worker.js",
-    "static/css/main.aa533529.chunk.css.map": "/icatch/static/css/main.aa533529.chunk.css.map"
+    "main.css": "/example-react-redux-icatch/static/css/main.aa533529.chunk.css",
+    "main.js": "/example-react-redux-icatch/static/js/main.f412115f.chunk.js",
+    "main.js.map": "/example-react-redux-icatch/static/js/main.f412115f.chunk.js.map",
+    "runtime~main.js": "/example-react-redux-icatch/static/js/runtime~main.28787973.js",
+    "runtime~main.js.map": "/example-react-redux-icatch/static/js/runtime~main.28787973.js.map",
+    "static/js/2.ee8e742c.chunk.js": "/example-react-redux-icatch/static/js/2.ee8e742c.chunk.js",
+    "static/js/2.ee8e742c.chunk.js.map": "/example-react-redux-icatch/static/js/2.ee8e742c.chunk.js.map",
+    "index.html": "/example-react-redux-icatch/index.html",
+    "precache-manifest.17eea8ad76eb48f8babca05c846fb841.js": "/example-react-redux-icatch/precache-manifest.17eea8ad76eb48f8babca05c846fb841.js",
+    "service-worker.js": "/example-react-redux-icatch/service-worker.js",
+    "static/css/main.aa533529.chunk.css.map": "/example-react-redux-icatch/static/css/main.aa533529.chunk.css.map"
   }
 }
